@@ -16,16 +16,12 @@ let newObj = Object.assign(user, user2)
 console.log(newObj);
 
 //2.Получить все ключи в один массив и все значения тоже в один отдельный массив
-let keys = [Object.keys(newObj)]
-let values = [Object.values(newObj)]
+let keys = Object.keys(newObj)
+let values = Object.values(newObj)
 console.log(keys,values);
 
 //3.Соеденить два массива в один
-let arr_name = ['Shoxrux']
-let arr_sname = ['Amanov']
-let arr_age = [18]
-let arr_isMarried = [false]
-let newArray = arr_name.concat(arr_sname, arr_age, arr_isMarried)
+let newArray = keys.concat(values)
 console.log(newArray);
 
 //4.Отфильтровать массив по типам данных элементов
